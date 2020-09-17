@@ -14,5 +14,7 @@ X_b = np.c_[np.ones((N,1)),x]
 a_optimum =  np.linalg.inv(X_b.T.dot(X_b)).dot(X_b.T).dot(y)
 
 # Best Solution
-print(f'O valor ótimo de a0 é: {a_optimum[0][0]}')
-print(f'O valor ótimo de a1 é: {a_optimum[1][0]}')
+print(f'a0 é: {a_optimum[0][0]}')
+print(f'a1 é: {a_optimum[1][0]}')
+
+print(a_optimum)
